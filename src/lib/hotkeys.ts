@@ -1,5 +1,5 @@
-import { currentStation, hasStarted } from './stores';
-import { getRandomLofi, goToRandomScene, goToRandomSceneWithMusic } from './utils';
+import { hasStarted } from './stores';
+import { goToRandomScene, goToRandomSceneWithMusic, selectRandomMusic } from './utils';
 
 export function setupHotkeys() {
 	function handleKeyUp(e: KeyboardEvent) {
@@ -8,7 +8,7 @@ export function setupHotkeys() {
 		} else if (e.key === 'k') {
 			goToRandomScene();
 		} else if (e.key === 'm') {
-			currentStation.set(getRandomLofi());
+			selectRandomMusic();
 		}
 	}
 

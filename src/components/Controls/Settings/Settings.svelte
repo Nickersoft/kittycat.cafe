@@ -23,12 +23,12 @@
 				<VolumeControl
 					bind:muted={$preferences.muteScene}
 					bind:value={$preferences.sceneVolume}
-					label="Scene volume"
+					label="Kitty sounds"
 				/>
 				<VolumeControl
 					bind:muted={$preferences.muteMusic}
 					bind:value={$preferences.musicVolume}
-					label="Music volume"
+					label="Music"
 				/>
 			</div>
 			<button

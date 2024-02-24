@@ -13,11 +13,7 @@
 	function shareTweet() {
 		const url = getSharableURL($page.url);
 
-		const tweet = `Come ${$currentScene.type} in #${createHashtag(
-			$currentScene.name
-		)} with me and chill! 🎧 #cityhop #${createHashtag(
-			stationMap[$currentStation.trackID].genre.toLowerCase()
-		)} 
+		const tweet = `Come hang visit a virtual cat cafe with me! 🐱☕ #kittycatcafe
 
 ${url}`.trim();
 

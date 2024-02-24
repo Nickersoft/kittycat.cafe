@@ -1,6 +1,6 @@
 ---
 name: Station request
-about: Request to have a music station or playlist added to City Hop!
+about: Request to have a music station or playlist added to KKC!
 title: '[Station Request] Station Name'
 labels: station request
 assignees: Nickersoft

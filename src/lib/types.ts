@@ -38,12 +38,7 @@ export interface SceneGroup {
 }
 
 export interface Scene {
-	name: string;
-	type: SceneTypes;
 	videoID: string;
-	tags?: Tags[];
-	hidden?: boolean;
-	suggestedTrack?: Station;
 	offset?: Offset;
 	// Used to better determine a good starting point
 	// Not required

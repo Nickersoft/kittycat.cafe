@@ -1,8 +1,9 @@
 <script lang="ts">
-	import { isFullscreen, preferences } from '$lib/stores';
+	import { currentScene, isFullscreen, preferences } from '$lib/stores';
 	import type { Offset } from '$lib/types';
+	import { goToRandomScene } from '$lib/utils';
 	import { random } from 'radash';
-	import { onMount } from 'svelte';
+	import { onDestroy, onMount } from 'svelte';
 	import type { YouTubePlayer } from 'youtube-player/dist/types';
 
 	import Controls from './Controls';
@@ -18,6 +19,7 @@
 	let backgroundPlayer: YouTubePlayer;
 	let audioPlayer: YouTubePlayer;
 	let videoDuration: number;
+	let videoTimeout: NodeJS.Timeout;
 
 	async function onPlay(event: CustomEvent) {
 		playing = true;
@@ -30,7 +32,7 @@
 	}
 
 	function onBackgroundEnded(event: CustomEvent) {
-		event.detail.target.seekTo(videoOffset.start, true);
+		goToRandomScene();
 	}
 
 	function onAudioReady(event: CustomEvent) {
@@ -40,8 +42,9 @@
 	}
 
 	function onVideoTimeChange(event: CustomEvent) {
-		// Restart the video 10s before it ends to not show related videos
-		if (videoDuration && event.detail.time > videoDuration + videoOffset.end) {
+		const hasEnded = videoDuration && event.detail.time > videoDuration + videoOffset.end;
+
+		if (hasEnded) {
 			onBackgroundEnded(event);
 		}
 	}
@@ -70,6 +73,11 @@
 		};
 	});
 
+	onDestroy(() => {
+		clearTimeout(inactiveTimeout);
+		clearTimeout(videoTimeout);
+	});
+
 	// Default to 30 min
 	$: offsetLength = videoLength ? videoLength - videoOffset.end - videoOffset.start : 1800;
 
@@ -79,6 +87,14 @@
 		backgroundPlayer.setVolume($preferences.muteScene ? 0 : $preferences.sceneVolume);
 
 	$: audioPlayer && audioPlayer.setVolume($preferences.muteMusic ? 0 : $preferences.musicVolume);
+
+	$: {
+		if ($currentScene) {
+			videoTimeout = setTimeout(() => {
+				goToRandomScene(false);
+			}, 900000); // Change video every 15 min
+		}
+	}
 </script>
 
 <Controls />

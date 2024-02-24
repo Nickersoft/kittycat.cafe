@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { BAC_LINK, IS_DECEMBER, IS_OCTOBER } from '$lib/constants';
+	import { BAC_LINK } from '$lib/constants';
 	import { createEventDispatcher } from 'svelte';
 
 	import CopyToClipboard from './CopyToClipboard.svelte';
@@ -37,9 +37,9 @@
 
 	<CopyToClipboard />
 
-	{#if IS_OCTOBER || IS_DECEMBER}
-		<ToolbarButton icon="mdi:dollar" action={BAC_LINK} title="Support CityHop" />
-	{/if}
+	<ToolbarButton icon="mdi:dollar" action={BAC_LINK} title="Support KKC" />
+
+	<ToolbarButton icon="mdi:city" action={BAC_LINK} title="Visit CityHop" />
 
 	<Tweet />
 
