@@ -4,4 +4,4 @@
 	import ToolbarButton from './ToolbarButton.svelte';
 </script>
 
-<ToolbarButton variant="full" action={BAC_LINK} title="Add your kitty" icon="mdi:plus" />
+<ToolbarButton variant="full" action={BAC_LINK} title="Feature your kitty" icon="mdi:plus" />

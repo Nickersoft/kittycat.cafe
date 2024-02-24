@@ -2,12 +2,10 @@
 	import '@fontsource-variable/figtree';
 	import 'iconify-icon';
 
-	import figtreeVariable from '@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2';
 	import figtreeVariableItalic from '@fontsource-variable/figtree/files/figtree-latin-wght-italic.woff2';
-
-	import { MetaTags } from 'svelte-meta-tags';
-
+	import figtreeVariable from '@fontsource-variable/figtree/files/figtree-latin-wght-normal.woff2';
 	import { page } from '$app/stores';
+	import { MetaTags } from 'svelte-meta-tags';
 
 	import '../app.postcss';
 
@@ -34,12 +32,11 @@
 		});
 	});
 
-	const siteTitle = 'CityHop';
+	const siteTitle = 'KittyCat Cafe';
 
-	const siteDescription =
-		'Take leisurely walks and drives around the world while chilling to lofi music 🎶';
+	const siteDescription = 'Your virtual cat cafe 🐱';
 
-	const siteURL = 'https://www.cityhop.cafe/';
+	const siteURL = 'https://www.kittycat.cafe/';
 
 	const ogImage = `${$page.url.origin}/og.jpg`;
 
@@ -53,7 +50,7 @@
 </svelte:head>
 
 <MetaTags
-	title="CityHop | Aesthetic walks and drives from around the world"
+	title="KittyCat Cafe | Your virtual cat cafe 🐱"
 	description={siteDescription}
 	canonical={siteURL}
 	openGraph={{
@@ -61,7 +58,7 @@
 		title: siteTitle,
 		description: siteDescription,
 		images: [{ url: ogImage }],
-		siteName: 'CityHop'
+		siteName: 'KittyCat Cafe'
 	}}
 	twitter={{
 		cardType: 'summary_large_image',

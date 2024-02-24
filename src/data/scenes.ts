@@ -16,7 +16,8 @@ const scenes: Scene[] = [
 	},
 	{
 		videoID: 'IFL0eFDxyFQ',
-		offset: { start: 60, end: 60 }
+		offset: { start: 30, end: 120 },
+		length: 900
 	},
 	{
 		videoID: 'PX7Oy4ttC48',

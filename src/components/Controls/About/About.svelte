@@ -1,5 +1,5 @@
 <script lang="ts">
-	import logo from '$images/logo.png';
+	import logo from '$images/logo.svg';
 	import { clickOutside } from '$lib/actions';
 
 	import Button from '../../Button.svelte';
@@ -16,25 +16,24 @@
 
 		<div class="flex flex-col items-center gap-8">
 			<p>
-				CityHop Cafe is a magical place where you can travel around the world from the comfort of
-				your desk, exploring new cities by foot or by car, all while listening to chill music.
-				Simply sit back and relax.
+				KittyCat Cafe is the world's cutest virtual coffee shop. It's a place to relax, listen to
+				music, and watch an endless stream of adorable cats. Sit back, relax, and cuddle up 🐈☕
 			</p>
 
 			<ul>
-				<li>Press <kbd>g</kbd> to go to a random place with new music.</li>
-				<li>Press <kbd>k</kbd> to go to a random place without changing your music.</li>
-				<li>Press <kbd>m</kbd> to switch to a random lofi station.</li>
+				<li>Press <kbd>g</kbd> to visit a new kitty with new music.</li>
+				<li>Press <kbd>k</kbd> to visit a new kitty without changing your music.</li>
+				<li>Press <kbd>m</kbd> to switch to a random jazz station.</li>
 			</ul>
 
-			<p>Have a city or station you'd like to see on the site?</p>
+			<p>Have a kitty or station you'd like to see on the site?</p>
 
 			<Button
-				action="https://github.com/Nickersoft/cityhop.cafe/issues/new/choose"
+				action="https://github.com/Nickersoft/kittycat.cafe/issues/new/choose"
 				icon="mdi:hand-back-left"
 			>
-				Open a Request</Button
-			>
+				Open a Request
+			</Button>
 
 			<p class="text-sm italic">
 				Psst... feel free to
@@ -49,7 +48,7 @@
 				or
 				<a
 					class="text-accent"
-					href="https://github.com/Nickersoft/cityhop.cafe"
+					href="https://github.com/Nickersoft/kittycat.cafe"
 					rel="noreferrer"
 					target="_blank"
 				>

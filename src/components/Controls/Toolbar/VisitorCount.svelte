@@ -23,7 +23,7 @@
 {#if visitorCount && visitorCount > 0}
 	<span transition:fade={{ duration: 500 }} class="text-white pl-2 flex-1 glow pr-4">
 		You're chilling with
-		<span class="text-yellow-400">{visitorCount}</span> other
+		<span class="text-accent">{visitorCount}</span> other
 		{visitorCount === 1 ? 'person' : 'people'}
 	</span>
 {/if}

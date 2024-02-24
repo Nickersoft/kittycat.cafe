@@ -1,13 +1,12 @@
-import { objectify } from 'radash';
-
 import type { Station } from '$lib/types';
+import { objectify } from 'radash';
 
 export const stations: Station[] = [
 	{
 		displayName: 'Relaxing Jazz Radio',
 		name: 'Warm Jazz Relaxing Music ☕ Cozy Cabin with Coffee Shop Ambience | Relax Jazz Music for Study, Work',
 		trackID: 'L5v9NRuWp8o',
-		live: true
+		live: false
 	},
 	{
 		displayName: 'Coffee Jazz Music Radio',

@@ -39,7 +39,7 @@
 
 	<ToolbarButton icon="mdi:dollar" action={BAC_LINK} title="Support KKC" />
 
-	<ToolbarButton icon="mdi:city" action={BAC_LINK} title="Visit CityHop" />
+	<ToolbarButton icon="mdi:city" action="https://cityhop.cafe" title="Visit CityHop" />
 
 	<Tweet />
 

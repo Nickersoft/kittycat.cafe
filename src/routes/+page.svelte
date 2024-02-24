@@ -1,16 +1,13 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { fade, fly, scale } from 'svelte/transition';
-
 	import { page } from '$app/stores';
-
 	import UI from '$components/UI.svelte';
-
 	import { DEFAULT_VIDEO_END_OFFSET, DEFAULT_VIDEO_START_OFFSET } from '$lib/constants';
 	import { setupHeartbeat } from '$lib/heartbeat';
 	import { setupHotkeys } from '$lib/hotkeys';
 	import { currentScene, currentStation, hasStarted, isPlaying } from '$lib/stores';
 	import { decodeSharableURL, goToRandomSceneWithMusic } from '$lib/utils';
+	import { onMount } from 'svelte';
+	import { fade, fly, scale } from 'svelte/transition';
 
 	onMount(() => {
 		const cleanupHeartbeat = setupHeartbeat();
@@ -22,7 +19,7 @@
 			$currentScene = decodedURL.scene;
 			$currentStation = decodedURL.track;
 		} else {
-			goToRandomSceneWithMusic(true);
+			goToRandomSceneWithMusic();
 		}
 
 		return () => {
@@ -44,7 +41,7 @@
 				class="absolute text-center -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
 			>
 				{#if $hasStarted}
-					Locating kitten...
+					Finding an available kitten...
 					<div class="loader" />
 				{:else}
 					Press any key or click anywhere to begin
