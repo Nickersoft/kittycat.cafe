@@ -15,8 +15,7 @@
 </script>
 
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { createEventDispatcher } from 'svelte';
+	import { createEventDispatcher, onMount } from 'svelte';
 	import createYTPlayer from 'youtube-player';
 	import type { Options, YouTubePlayer } from 'youtube-player/dist/types';
 

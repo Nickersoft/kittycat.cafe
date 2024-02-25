@@ -44,7 +44,7 @@
 					Finding an available kitten...
 					<div class="loader" />
 				{:else}
-					Press any key or click anywhere to begin
+					Press any key or click anywhere to enter
 				{/if}
 			</div>
 		{/key}

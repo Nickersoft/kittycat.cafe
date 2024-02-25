@@ -1,5 +1,5 @@
 import { sceneMap, scenes } from '$data/scenes';
-import { stations, stationMap } from '$data/stations';
+import { stationMap, stations } from '$data/stations';
 import { draw } from 'radash';
 import { get } from 'svelte/store';
 
@@ -8,10 +8,11 @@ import { currentScene, currentStation, isPlaying } from './stores';
 export function goToRandomScene(restartIsPlaying: boolean = true) {
 	const scene = draw(scenes);
 
+	restartIsPlaying && isPlaying.set(false);
+
 	if (!scene) {
 		goToRandomScene();
 	} else {
-		restartIsPlaying && isPlaying.set(false);
 		currentScene.set(draw(scenes)!);
 	}
 }
