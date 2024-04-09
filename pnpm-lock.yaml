@@ -25,7 +25,7 @@ dependencies:
     version: 2.0.0
   posthog-js:
     specifier: ^1.101.0
-    version: 1.120.2
+    version: 1.120.3
   posthog-node:
     specifier: ^4.0.0
     version: 4.0.0
@@ -2570,11 +2570,11 @@ packages:
       picocolors: 1.0.0
       source-map-js: 1.2.0
 
-  /posthog-js@1.120.2:
-    resolution: {integrity: sha512-19LehjKgcmOzdj5OOicyzCXdxN4SVMX2IC1FvQR9gozxxxxhh6lCwWoe3y955S2KRLRP/8BjQ3zmMezV1ZCSQQ==}
+  /posthog-js@1.120.3:
+    resolution: {integrity: sha512-J5o2aRNIrSCt6/kei+UN9RhTpZDa9bcRkwkauhjrtCz9Ne3yjCP9phfIlP5HJrJBpNGIzK/YlFuy8/57Tw+piQ==}
     dependencies:
       fflate: 0.4.8
-      preact: 10.20.1
+      preact: 10.20.2
     dev: false
 
   /posthog-node@4.0.0:
@@ -2587,8 +2587,8 @@ packages:
       - debug
     dev: false
 
-  /preact@10.20.1:
-    resolution: {integrity: sha512-JIFjgFg9B2qnOoGiYMVBtrcFxHqn+dNXbq76bVmcaHYJFYR4lW67AOcXgAYQQTDYXDOg/kTZrKPNCdRgJ2UJmw==}
+  /preact@10.20.2:
+    resolution: {integrity: sha512-S1d1ernz3KQ+Y2awUxKakpfOg2CEmJmwOP+6igPx6dgr6pgDvenqYviyokWso2rhHvGtTlWWnJDa7RaPbQerTg==}
     dev: false
 
   /prelude-ls@1.2.1:
