@@ -28,7 +28,7 @@ importers:
         version: 2.3.0
       posthog-js:
         specifier: ^1.190.2
-        version: 1.231.2(@rrweb/types@2.0.0-alpha.17)
+        version: 1.231.3(@rrweb/types@2.0.0-alpha.17)
       posthog-node:
         specifier: ^4.3.1
         version: 4.10.1
@@ -1472,8 +1472,8 @@ packages:
     resolution: {integrity: sha512-dle9A3yYxlBSrt8Fu+IpjGT8SY8hN0mlaA6GY8t0P5PjIOZemULz/E2Bnm/2dcUOena75OTNkHI76uZBNUUq3A==}
     engines: {node: ^10 || ^12 || >=14}
 
-  posthog-js@1.231.2:
-    resolution: {integrity: sha512-KTOZTvPbVZoZYC4vqZUmPoG/brbyNqqeeUllH4MZBIW0gyC6JJJYsU+za1of9La73F4KBN1ZM3O0tXpFrLSAww==}
+  posthog-js@1.231.3:
+    resolution: {integrity: sha512-IHbdMpI9btpgn7xIlq+cFH47227NTxD6so9jWYLdVD7Qt5rLTm0Ho61iUFHj1gwd+pFXP3H2TCBJ9+dBgZ0zFw==}
     peerDependencies:
       '@rrweb/types': 2.0.0-alpha.17
       rrweb-snapshot: 2.0.0-alpha.17
@@ -3115,7 +3115,7 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-  posthog-js@1.231.2(@rrweb/types@2.0.0-alpha.17):
+  posthog-js@1.231.3(@rrweb/types@2.0.0-alpha.17):
     dependencies:
       core-js: 3.41.0
       fflate: 0.4.8
