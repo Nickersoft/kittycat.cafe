@@ -31,7 +31,7 @@ importers:
         version: 1.234.10(@rrweb/types@2.0.0-alpha.17)
       posthog-node:
         specifier: ^4.3.1
-        version: 4.11.1
+        version: 4.11.2
       radash:
         specifier: ^12.1.0
         version: 12.1.0
@@ -1492,8 +1492,8 @@ packages:
       rrweb-snapshot:
         optional: true
 
-  posthog-node@4.11.1:
-    resolution: {integrity: sha512-Hdby0Rq2K1rzjHxQdUmFBEP2UqAR/tY4d0WbNp7GxkYUK0YZvAD15MkeorSo4b8X7zgosHfQJVRxGx0HWSYPBA==}
+  posthog-node@4.11.2:
+    resolution: {integrity: sha512-zzXCzatMyXcDdvcSJFoCV1lA+5LkT2f7dt1vj6I4S6QGUWlRMMu8krApseUY4/E8m2rhQlmR8BZU/2xXcgS7XQ==}
     engines: {node: '>=15.0.0'}
 
   preact@10.26.5:
@@ -3140,7 +3140,7 @@ snapshots:
     optionalDependencies:
       '@rrweb/types': 2.0.0-alpha.17
 
-  posthog-node@4.11.1:
+  posthog-node@4.11.2:
     dependencies:
       axios: 1.8.4
     transitivePeerDependencies:
