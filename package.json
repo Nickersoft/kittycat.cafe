@@ -49,7 +49,7 @@
 		"copy-to-clipboard": "^3.3.3",
 		"dayjs": "^1.11.13",
 		"fuzzysort": "^3.1.0",
-		"iconify-icon": "^2.1.0",
+		"iconify-icon": "^3.0.0",
 		"posthog-js": "^1.190.2",
 		"posthog-node": "^4.3.1",
 		"radash": "^12.1.0",
