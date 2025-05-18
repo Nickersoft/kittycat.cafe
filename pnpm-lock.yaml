@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@fontsource-variable/figtree':
         specifier: ^5.1.1
-        version: 5.2.7
+        version: 5.2.8
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -361,8 +361,8 @@ packages:
     resolution: {integrity: sha512-0J+zgWxHN+xXONWIyPWKFMgVuJoZuGiIFu8yxk7RJjxkzpGmyja5wRFqZIVtjDVOQpV+Rw0iOAjYPE2eQyjr0w==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource-variable/figtree@5.2.7':
-    resolution: {integrity: sha512-BduURcAtHqJCopsUHWn014AUqivDGCJyrdhKt4ihM880LWA0ReeUJo8OWxVw5n9N4K9R8KYBDBJsHe+o8eWH2A==}
+  '@fontsource-variable/figtree@5.2.8':
+    resolution: {integrity: sha512-T1X/m2Yw0nKSlbBmaPdZR9Ed1I0cXZVIGc6kScyo9wgyxtGXR+bawboP+W2DHNMHWz90JEz1IAEPQ5bcNprn0w==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -2079,7 +2079,7 @@ snapshots:
       '@eslint/core': 0.14.0
       levn: 0.4.1
 
-  '@fontsource-variable/figtree@5.2.7': {}
+  '@fontsource-variable/figtree@5.2.8': {}
 
   '@humanfs/core@0.19.1': {}
 
