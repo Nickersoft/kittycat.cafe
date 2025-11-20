@@ -51,7 +51,7 @@
 		"fuzzysort": "^3.1.0",
 		"iconify-icon": "^3.0.0",
 		"posthog-js": "^1.190.2",
-		"posthog-node": "^4.3.1",
+		"posthog-node": "^5.0.0",
 		"radash": "^12.1.0",
 		"svelte-local-storage-store": "^0.6.4",
 		"sveltekit-search-params": "^3.0.0",
