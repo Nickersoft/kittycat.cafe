@@ -56,7 +56,7 @@ importers:
         version: 1.54.2
       '@sveltejs/adapter-auto':
         specifier: ^6.0.0
-        version: 6.1.0(@sveltejs/kit@2.30.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))
+        version: 6.1.1(@sveltejs/kit@2.30.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))
       '@sveltejs/kit':
         specifier: ^2.8.5
         version: 2.30.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1))
@@ -577,8 +577,8 @@ packages:
     peerDependencies:
       acorn: ^8.9.0
 
-  '@sveltejs/adapter-auto@6.1.0':
-    resolution: {integrity: sha512-shOuLI5D2s+0zTv2ab5M5PqfknXqWbKi+0UwB9yLTRIdzsK1R93JOO8jNhIYSHdW+IYXIYnLniu+JZqXs7h9Wg==}
+  '@sveltejs/adapter-auto@6.1.1':
+    resolution: {integrity: sha512-cBNt4jgH4KuaNO5gRSB2CZKkGtz+OCZ8lPjRQGjhvVUD4akotnj2weUia6imLl2v07K3IgsQRyM36909miSwoQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
 
@@ -1031,6 +1031,7 @@ packages:
   eslint@9.33.0:
     resolution: {integrity: sha512-TS9bTNIryDzStCpJN93aC5VRSW3uTx9sClUn4B87pwiCaJh220otoI0X8mJKr+VcPtniMdN8GKjlwgWGUv5ZKA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -1183,6 +1184,7 @@ packages:
 
   glob@10.4.5:
     resolution: {integrity: sha512-7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==}
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     hasBin: true
 
   globals@14.0.0:
@@ -1386,6 +1388,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@3.3.18:
+    resolution: {integrity: sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
@@ -1533,6 +1540,10 @@ packages:
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
 
+  postcss@8.5.28:
+    resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
+    engines: {node: ^10 || ^12 || >=14}
+
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -1612,8 +1623,8 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
-  rrweb-snapshot@2.0.0-alpha.18:
-    resolution: {integrity: sha512-hBHZL/NfgQX6wO1D9mpwqFu1NJPpim+moIcKhFEjVTZVRUfCln+LOugRc4teVTCISYHN8Cw5e2iNTWCSm+SkoA==}
+  rrweb-snapshot@2.1.1:
+    resolution: {integrity: sha512-al4Kx7Am7YlIn/5Yb2EMr7cdmjGiK+cLhdilJEXqkFXgpnys8t/yMJumXy2Ormgirpg3MBnFha0GTgny+iIL2w==}
 
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
@@ -2283,7 +2294,7 @@ snapshots:
 
   '@rrweb/types@2.0.0-alpha.17':
     dependencies:
-      rrweb-snapshot: 2.0.0-alpha.18
+      rrweb-snapshot: 2.1.1
     optional: true
 
   '@standard-schema/spec@1.0.0': {}
@@ -2292,7 +2303,7 @@ snapshots:
     dependencies:
       acorn: 8.15.0
 
-  '@sveltejs/adapter-auto@6.1.0(@sveltejs/kit@2.30.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))':
+  '@sveltejs/adapter-auto@6.1.1(@sveltejs/kit@2.30.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))':
     dependencies:
       '@sveltejs/kit': 2.30.1(@sveltejs/vite-plugin-svelte@5.1.1(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1)))(svelte@5.38.1)(vite@6.3.5(@types/node@22.17.2)(jiti@1.21.6)(yaml@2.6.1))
 
@@ -3132,6 +3143,9 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  nanoid@3.3.18:
+    optional: true
+
   natural-compare@1.4.0: {}
 
   node-releases@2.0.19: {}
@@ -3239,6 +3253,13 @@ snapshots:
 
   postcss-value-parser@4.2.0: {}
 
+  postcss@8.5.28:
+    dependencies:
+      nanoid: 3.3.18
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+    optional: true
+
   postcss@8.5.6:
     dependencies:
       nanoid: 3.3.11
@@ -3325,9 +3346,9 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.40.1
       fsevents: 2.3.3
 
-  rrweb-snapshot@2.0.0-alpha.18:
+  rrweb-snapshot@2.1.1:
     dependencies:
-      postcss: 8.5.6
+      postcss: 8.5.28
     optional: true
 
   run-parallel@1.2.0:
